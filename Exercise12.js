@@ -27,6 +27,13 @@ The best sleigh to cover the distance is Madeval.
 
 Gorusuke covers the distance but it's a worse sleigh
 Lolivier and Hyuuh can't cover the distance with 20W.
+
+Remember that:
+
+- The battery is always 20W.
+- The list of sleighs is ordered from worst to best sleigh.
+- You have to return the name of the best sleigh that allows us to cover the distance with the watts we have available.
+- If no sleigh can be used, then return null.
 */
 
 const distance = 30;

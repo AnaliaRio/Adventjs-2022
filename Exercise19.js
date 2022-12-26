@@ -33,7 +33,7 @@ function sortToys(toys, positions) {
 }
 
 /*
-ANOTHER SOLUTION
+SECOND SOLUTION
 
 function sortToys(toys, positions) {
   return toys
@@ -42,4 +42,21 @@ function sortToys(toys, positions) {
     .map ( item => item.toy );
 }
 
+THIRD SOLUTION
+
+function sortToys(toys, positions) {
+     const oldPositions = [...positions]
+   const newPositions = positions.sort((a,b)=>a-b)
+
+   return newPositions.map(obj => {
+   return toys[oldPositions.indexOf(obj)]
+   })
+}
+
+FOURTH SOLUTION
+
+function sortToys(toys, positions) {
+  return toys.sort((a, b) => positions[toys.indexOf(a)] - 
+  positions[toys.indexOf(b)])
+}
 */
